@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from backend.models import UserSettings, UserSettingsUpdate, SystemInfo
-from backend.database import user_settings_collection
+from models import UserSettings, UserSettingsUpdate, SystemInfo
+from database import user_settings_collection
 from datetime import datetime
 import time
 
