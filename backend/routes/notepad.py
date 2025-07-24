@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models import NotepadFile, NotepadFileCreate, NotepadFileUpdate
-from ..database import notepad_files_collection
+from backend.models import NotepadFile, NotepadFileCreate, NotepadFileUpdate
+from backend.database import notepad_files_collection
 from datetime import datetime
 
 router = APIRouter(prefix="/notepad", tags=["notepad"])
