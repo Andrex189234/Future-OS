@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models import FileSystemItem, FileSystemItemCreate, FileSystemItemUpdate
-from ..database import filesystem_collection
+from backend.models import FileSystemItem, FileSystemItemCreate, FileSystemItemUpdate
+from backend.database import filesystem_collection
 from datetime import datetime
 
 router = APIRouter(prefix="/filesystem", tags=["filesystem"])
