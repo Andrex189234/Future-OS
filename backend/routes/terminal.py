@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models import TerminalHistoryEntry, TerminalHistoryCreate
-from ..database import terminal_history_collection, filesystem_collection
+from backend.models import TerminalHistoryEntry, TerminalHistoryCreate
+from backend.database import terminal_history_collection, filesystem_collection
 from datetime import datetime
 
 router = APIRouter(prefix="/terminal", tags=["terminal"])
