@@ -11,8 +11,8 @@ import uuid
 from datetime import datetime
 
 # Importa le routes
-from routes import settings, filesystem, terminal, notepad
-from database import init_default_data
+from .routes import settings, filesystem, terminal, notepad
+from .database import init_default_data
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
